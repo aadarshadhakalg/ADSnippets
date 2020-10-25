@@ -1,0 +1,20 @@
+{
+    "ComponentSnippet": {
+        "prefix": "adcomp",
+        "body": [
+            "import 'package:angular/angular.dart';\n\n",
+            "@Component(",
+            "\tselector: '$1',",
+            "\ttemplateUrl: '${2:.template.html}',",
+            "\tdirectives: [coreDirectives],",
+            "\tproviders: [],",
+            ")\n\n",
+            "class Component implements OnInit {",
+            "\t@override",
+            "\tvoid ngOnInit() {",
+            "\t\t// TODO: implement ngOnInit",
+            "\t}",
+            "}",
+        ]
+    }
+}

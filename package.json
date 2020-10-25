@@ -1,0 +1,21 @@
+{
+    "name": "adsnippets",
+    "displayName": "adsnippets",
+    "description": "A simple Angular Dart snippet extension. Generate boilerplate code for your next Angular Dart Project",
+    "version": "0.0.1",
+    "publisher": "Aadarsha Dhakal",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "dart",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
