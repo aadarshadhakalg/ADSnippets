@@ -1,17 +1,22 @@
 {
     "name": "adsnippets",
-    "displayName": "adsnippets",
+    "displayName": "Angular Dart Snippets",
     "description": "A simple Angular Dart snippet extension. Generate boilerplate code for your next Angular Dart Project",
-    "version": "0.0.1",
+    "version": "0.0.5",
     "publisher": "aadarshadhakalg",
     "repository": {
         "type": "git",
-        "url": "",
+        "url": "https://github.com/aadarshadhakalg/ADSnippets"
     },
     "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.50.0"
     },
+    "keywords": [
+        "Angular Dart",
+        "AngularDart",
+        "Dart"
+    ],
     "categories": [
         "Snippets"
     ],
@@ -19,7 +24,11 @@
         "snippets": [
             {
                 "language": "dart",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/dart-snippets.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html-snippets.code-snippets"
             }
         ]
     }

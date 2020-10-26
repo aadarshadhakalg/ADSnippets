@@ -4,7 +4,22 @@ Angular Dart Snippets Generator.
 
 ## Features
 
+### Generating Dart Codes
+
 adcomp - Generate Angular Component
+
+### Template Syntax
+
+ad-router-link - Angular Dart Router Link
+ad-router-attribute - Angular Dart Router Attribute
+ad-router-linkActive - Angular Dart Active Router Link
+ad-router-outlet - Angular Dart Router Outlet
+ad-router-outlet-name - Angular Dart Router Outlet Name
+ad-if - Angular Dart If Directive
+ad-for - Angular Dart For Loop Directive
+ad-for-li - Angular Dart For Loop Directive with li Element
+ad-for-index - Angular Dart For Loop Directive with Index
+ad-click - Angular Dart Click Event
 
 ## Requirements
 
@@ -17,10 +32,25 @@ Dart Extension
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 Initial release of ...
 
+### 0.0.2
+
+Bug Fixes
+
+### 0.0.3
+
+Bug Fixes
+
+### 0.0.4
+
+Bug Fixes
+
+### 0.0.4
+
+HTML Template Support
 
 -----------------------------------------------------------------------------------------------------------
 

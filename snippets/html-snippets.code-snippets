@@ -1,0 +1,76 @@
+{
+    "Angular Dart Router Link": {
+    "prefix": "ad-router-link",
+    "description": "Router link",
+    "body": [
+      "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">${name}</a>$0"
+    ]
+  },
+  "Angular Dart Router Attribute": {
+    "prefix": "ad-router-attribute",
+    "description": "Router link",
+    "body": [
+      "[routerLink]=\"[ '/${path}', ${routeParam} ]\"$0"
+    ]
+  },
+  "Angular Dart Router Active Link": {
+    "prefix": "ad-router-linkActive",
+    "description": "Router active link",
+    "body": [
+      "<a [routerLink]=\"[ '/${path}' ]\" routerLinkActive=\"active\">${name}</a>$0"
+    ]
+  },
+  "Angular Dart Router Outlet": {
+    "prefix": "ad-router-outlet",
+    "description": "Router outlet element",
+    "body": [
+      "<router-outlet></router-outlet>",
+      "$0"
+    ]
+  },
+  "Angular Dart Router Outlet Name": {
+    "prefix": "ad-router-outlet-name",
+    "description": "Router outlet element with name",
+    "body": [
+      "<router-outlet name=\"${name}\"></router-outlet>",
+      "$0"
+    ]
+  },
+
+  "Angular Dart If Directive": {
+    "prefix": "ad-if",
+    "description": "If directive: *ngIf=\"expression\"",
+    "body": [
+      "*ngIf=\"${expression}\"$0"
+    ]
+  },
+
+  "Angular Dart For-loop Directive": {
+    "prefix": "ad-for",
+    "description": "For-loop directive",
+    "body": [
+      "*ngFor=\"let ${item} of ${items}\"$0"
+    ]
+  },
+  "Angular Dart For-loop Directive with li element": {
+    "prefix": "ad-for-li",
+    "description": "For-loop directive with li element",
+    "body": [
+      "<li *ngFor=\"let ${item} of ${items}\">$0</li>"
+    ]
+  },
+  "Angular Dart For-loop Directive with index": {
+    "prefix": "ad-for-index",
+    "description": "For-loop directive with index",
+    "body": [
+      "*ngFor=\"let ${item} of ${items}; let i=index\"$0"
+    ]
+  },
+  "Angular Dart Click Event": {
+    "prefix": "ad-click",
+    "description": "Click event",
+    "body": [
+      "(click)=\"${expression}\"$0"
+    ]
+  },
+}
