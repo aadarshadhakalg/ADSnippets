@@ -96,4 +96,33 @@
             "}",
         ]
     },
+    "Angular Route Definition": {
+        "prefix": "ad-route",
+        "description": "Angular Route Definition",
+        "body": [
+            "import 'package:angular_router/angular_router.dart';",
+            "import '${1:component_route_path}' as ${2:name}_lib;",
+            "",
+            "final ${2:name}Route = RouteDefinition(",
+            "\tpath: ${3:RoutePath},",
+            "\tcomponent: ${2:name}_lib.ngFactory,",
+            ");",
+        ]
+    },
+    "Angular Route Definition Lazy": {
+        "prefix": "ad-route-lazy",
+        "description": "Angular Route Definition Lazy",
+        "body": [
+            "import 'package:angular_router/angular_router.dart';",
+            "import '${1:component_route_path}' deferred as ${2:name}_lib;",
+            "",
+            "final ${2:name}Route = RouteDefinition.defer(",
+            "\tpath: ${3:RoutePath},",
+            "\tloader: () async {",
+            "\t\tawait ${2:name}_lib.loadLibrary();",
+            "\t\treturn ${2:name}_lib.ngFactory;",
+            "\t},",
+            ");",
+        ]
+    },
 }
