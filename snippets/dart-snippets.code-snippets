@@ -15,6 +15,22 @@
             "}",
         ]
     },
+    "Angular Directive": {
+        "prefix": "ad-directive",
+        "description": "Angular Directive",
+        "body": [
+            "import 'package:angular/angular.dart';\n",
+            "@Directive(",
+            "\tselector: '${1:directiveSelector}',",
+            "\tproviders: [],",
+            ")",
+            "class ${3:Name}Directive {",
+            "\tfinal Element element;",
+            "",
+            "\t${3:Name}Directive(this.element);",
+            "}",
+        ]
+    },
     "Angular Pipe": {
         "prefix": "ad-pipe",
         "description": "Angular pipe",
