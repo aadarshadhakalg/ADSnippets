@@ -45,4 +45,24 @@
             "}"
         ]
     },
+    "Angular Component OnPush": {
+        "prefix": "ad-comp-push",
+        "description": "Angular Component using OnPush change detection",
+        "body": [
+            "import 'package:angular/angular.dart';\n",
+            "@Component(",
+            "\tselector: '${1:component-selector}',",
+            "\ttemplateUrl: '${2:component_path}.html',",
+            "\tstyleUrls: ['${2:component_path}.css'],",
+            "\tdirectives: [coreDirectives],",
+            "\tproviders: [],",
+            "\tchangeDetection: ChangeDetectionStrategy.OnPush,",
+            ")",
+            "class ${3:Name}Component {",
+            "\tfinal ChangeDetectorRef changeDetection;",
+            "",
+            "\t${3:Name}Component(this.changeDetection);",
+            "}",
+        ]
+    },
 }
