@@ -125,4 +125,13 @@
             ");",
         ]
     },
+    "TrackBy Function": {
+        "prefix": "ad-trackby",
+        "description": "TrackBy Function",
+        "body": [
+            "${1:trackBy}(int index,, item) {",
+            "\t$0",
+            "}"
+        ]
+    }
 }
