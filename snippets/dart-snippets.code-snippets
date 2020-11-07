@@ -1,5 +1,5 @@
 {
-    "ComponentSnippet": {
+    "Angular Component": {
         "prefix": "ad-comp",
         "body": [
             "import 'package:angular/angular.dart';\n",
@@ -13,5 +13,19 @@
             "class ${3:Name}Component {",
             "}",
         ]
-    }
+    },
+    "Angular Pipe": {
+        "prefix": "ad-pipe",
+        "description": "Angular pipe",
+        "body": [
+            "import 'package:angular/angular.dart';",
+            "",
+            "@Pipe('${1:selectorName}')",
+            "class ${2:Name}Pipe implements PipeTransform {",
+            "\ttransform(dynamic value) {",
+            "\t\t$0",
+            "\t}",
+            "}"
+        ]
+    },
 }
