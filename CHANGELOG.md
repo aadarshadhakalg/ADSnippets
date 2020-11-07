@@ -2,12 +2,25 @@
 
 All notable changes to the "adsnippets" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.0.6]
+
+- rename `adcomp` to `ad-comp`
+- Fix html snippets
+
+- More Dart snippets
+  | Shortcut | Description |
+  | ------------- | -------------------------------------- |
+  | ad-comp-push | Component with OnPush change detection |
+  | ad-comp-route | Route Component |
+  | ad-pipe | Pipe |
+  | ad-directive | Directive |
+  | ad-route | Route Definition |
+  | ad-route-lazy | Deferred Route Definition |
+  | ad-trackBy | Track By function |
 
 ## [0.0.5]
 
 - Added Html Code Snippets
-
 
 ## [0.0.4]
 

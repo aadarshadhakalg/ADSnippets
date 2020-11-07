@@ -1,35 +1,40 @@
 {
-    "name": "adsnippets",
-    "displayName": "Angular Dart Snippets",
-    "description": "A simple Angular Dart snippet extension. Generate boilerplate code for your next Angular Dart Project",
-    "version": "0.0.5",
-    "publisher": "aadarshadhakalg",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/aadarshadhakalg/ADSnippets"
-    },
-    "icon": "images/icon.png",
-    "engines": {
-        "vscode": "^1.50.0"
-    },
-    "keywords": [
-        "Angular Dart",
-        "AngularDart",
-        "Dart"
-    ],
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "dart",
-                "path": "./snippets/dart-snippets.code-snippets"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/html-snippets.code-snippets"
-            }
-        ]
-    }
+	"name": "adsnippets",
+	"displayName": "Angular Dart Snippets",
+	"description": "A simple Angular Dart snippet extension. Generate boilerplate code for your next Angular Dart Project",
+	"version": "0.0.6",
+	"publisher": "aadarshadhakalg",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aadarshadhakalg/ADSnippets"
+	},
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"keywords": [
+		"Angular Dart",
+		"AngularDart",
+		"Dart"
+	],
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "dart",
+				"path": "./snippets/dart-snippets.code-snippets"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html-snippets.code-snippets"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "b6cbe7ae-b78b-4ade-b781-36af16bfa67b",
+		"publisherDisplayName": "Aadarsha Dhakal",
+		"publisherId": "f5ca5441-948a-4265-b24e-65e3543ab878"
+	}
 }

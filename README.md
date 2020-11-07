@@ -10,9 +10,16 @@ Angular Dart Snippets Generator.
 
 ### Generating Dart Codes
 
-| Shortcut | Description                |
-| -------- | -------------------------- |
-| adcomp   | Generate Angular Component |
+| Shortcut      | Description                            |
+| ------------- | -------------------------------------- |
+| ad-comp       | Generate Angular Component             |
+| ad-comp-push  | Component with OnPush change detection |
+| ad-comp-route | Route Component                        |
+| ad-pipe       | Pipe                                   |
+| ad-directive  | Directive                              |
+| ad-route      | Route Definition                       |
+| ad-route-lazy | Deferred Route Definition              |
+| ad-trackBy    | Track By function                      |
 
 ### Template Syntax
 
