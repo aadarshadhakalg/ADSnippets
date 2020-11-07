@@ -1,21 +1,16 @@
 {
     "ComponentSnippet": {
-        "prefix": "adcomp",
+        "prefix": "ad-comp",
         "body": [
-            "import 'package:angular/angular.dart';\n\n",
+            "import 'package:angular/angular.dart';\n",
             "@Component(",
-            "\tselector: '$1',",
-            "\ttemplateUrl: './$1_component.html',",
-            "\tstyleUrls: ['./$1_component.css'],",
+            "\tselector: '${1:component-selector}',",
+            "\ttemplateUrl: '${2:component_path}.html',",
+            "\tstyleUrls: ['${2:component_path}.css'],",
             "\tdirectives: [coreDirectives],",
             "\tproviders: [],",
-            ")\n\n",
-            "class ${2:Name}Component implements OnInit {",
-            "\t@override",
-            "\tvoid ngOnInit() {",
-            "\t\t// TODO: implement ngOnInit",
-            "\t\t$3",
-            "\t}",
+            ")",
+            "class ${3:Name}Component {",
             "}",
         ]
     }
