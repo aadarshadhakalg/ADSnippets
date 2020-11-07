@@ -1,6 +1,7 @@
 {
     "Angular Component": {
         "prefix": "ad-comp",
+        "description": "Angular Component",
         "body": [
             "import 'package:angular/angular.dart';\n",
             "@Component(",
