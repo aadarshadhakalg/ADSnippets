@@ -1,5 +1,9 @@
 # ADSnippets
 
+[![Version](https://vsmarketplacebadge.apphb.com/version/aadarshadhakalg.adsnippets.svg)](https://marketplace.visualstudio.com/items?itemName=aadarshadhakalg.adsnippets)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/aadarshadhakalg.adsnippets.svg)](https://marketplace.visualstudio.com/items?itemName=aadarshadhakalg.adsnippets)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/aadarshadhakalg.adsnippets.svg)](https://marketplace.visualstudio.com/items?itemName=aadarshadhakalg.adsnippets)
+
 Angular Dart Snippets Generator.
 
 ## Features
