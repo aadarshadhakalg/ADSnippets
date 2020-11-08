@@ -1,6 +1,7 @@
 {
-    "ComponentSnippet": {
+    "Angular Component": {
         "prefix": "ad-comp",
+        "description": "Angular Component",
         "body": [
             "import 'package:angular/angular.dart';\n",
             "@Component(",
@@ -12,6 +13,125 @@
             ")",
             "class ${3:Name}Component {",
             "}",
+        ]
+    },
+    "Angular Directive": {
+        "prefix": "ad-directive",
+        "description": "Angular Directive",
+        "body": [
+            "import 'package:angular/angular.dart';\n",
+            "@Directive(",
+            "\tselector: '${1:directiveSelector}',",
+            "\tproviders: [],",
+            ")",
+            "class ${3:Name}Directive {",
+            "\tfinal Element element;",
+            "",
+            "\t${3:Name}Directive(this.element);",
+            "}",
+        ]
+    },
+    "Angular Pipe": {
+        "prefix": "ad-pipe",
+        "description": "Angular pipe",
+        "body": [
+            "import 'package:angular/angular.dart';",
+            "",
+            "@Pipe('${1:selectorName}')",
+            "class ${2:Name}Pipe implements PipeTransform {",
+            "\ttransform(dynamic value) {",
+            "\t\t$0",
+            "\t}",
+            "}"
+        ]
+    },
+    "Angular Component OnPush": {
+        "prefix": "ad-comp-push",
+        "description": "Angular Component using OnPush change detection",
+        "body": [
+            "import 'package:angular/angular.dart';\n",
+            "@Component(",
+            "\tselector: '${1:component-selector}',",
+            "\ttemplateUrl: '${2:component_path}.html',",
+            "\tstyleUrls: ['${2:component_path}.css'],",
+            "\tdirectives: [coreDirectives],",
+            "\tproviders: [],",
+            "\tchangeDetection: ChangeDetectionStrategy.OnPush,",
+            ")",
+            "class ${3:Name}Component {",
+            "\tfinal ChangeDetectorRef changeDetection;",
+            "",
+            "\t${3:Name}Component(this.changeDetection);",
+            "}",
+        ]
+    },
+    "Angular Route Component": {
+        "prefix": "ad-comp-route",
+        "description": "Angular Route Component",
+        "body": [
+            "import 'package:angular/angular.dart';",
+            "import 'package:angular_router/angular_router.dart';",
+            "import '$TM_FILENAME_BASE.template.dart' as template;",
+            "",
+            "final ngFactory = template.${1:Name}ComponentNgFactory;",
+            "",
+            "@Component(",
+            "\tselector: '${2:component-selector}',",
+            "\ttemplateUrl: '${3:component_path}.html',",
+            "\tstyleUrls: ['${3:component_path}.css'],",
+            "\tdirectives: [coreDirectives],",
+            "\tproviders: [],",
+            ")",
+            "class ${1:Name}Component implements OnActivate, OnDeactivate {",
+            "",
+            "\t@override",
+            "\tvoid onActivate(RouterState previous, RouterState current) {",
+            "\t\t$0",
+            "\t}",
+            "",
+            "\t@override",
+            "\tvoid onDeactivate(RouterState current, RouterState next) {",
+            "\t}",
+            "",
+            "}",
+        ]
+    },
+    "Angular Route Definition": {
+        "prefix": "ad-route",
+        "description": "Angular Route Definition",
+        "body": [
+            "import 'package:angular_router/angular_router.dart';",
+            "import '${1:component_route_path}' as ${2:name}_lib;",
+            "",
+            "final ${2:name}Route = RouteDefinition(",
+            "\tpath: ${3:RoutePath},",
+            "\tcomponent: ${2:name}_lib.ngFactory,",
+            ");",
+        ]
+    },
+    "Angular Route Definition Lazy": {
+        "prefix": "ad-route-lazy",
+        "description": "Angular Route Definition Lazy",
+        "body": [
+            "import 'package:angular_router/angular_router.dart';",
+            "import '${1:component_route_path}' deferred as ${2:name}_lib;",
+            "",
+            "final ${2:name}Route = RouteDefinition.defer(",
+            "\tpath: ${3:RoutePath},",
+            "\tloader: () async {",
+            "\t\tawait ${2:name}_lib.loadLibrary();",
+            "\t\treturn ${2:name}_lib.ngFactory;",
+            "\t},",
+            ");",
+        ]
+    },
+    "TrackBy Function": {
+        "prefix": "ad-trackby",
+        "description": "TrackBy Function",
+        "body": [
+            "${1:trackBy}(int index,, item) {",
+            "\t$0",
+            "}"
         ]
     }
 }
