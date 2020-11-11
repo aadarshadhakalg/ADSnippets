@@ -3,28 +3,28 @@
     "prefix": "ad-router-link",
     "description": "Router link",
     "body": [
-      "<a [routerLink]=\"${path}\">${name}</a>$0"
+      "<a [routerLink]=\"${1:path}\">${2:name}</a>$0"
     ]
   },
   "Angular Dart Router Attribute": {
     "prefix": "ad-router-attribute",
     "description": "Router link",
     "body": [
-      "[routerLink]=\"${path}\"$0"
+      "[routerLink]=\"${1:path}\"$0"
     ]
   },
   "Angular Dart Router Active Link": {
     "prefix": "ad-router-linkActive",
     "description": "Router active link",
     "body": [
-      "<a [routerLink]=\"${path}\" routerLinkActive=\"active\">${name}</a>$0"
+      "<a [routerLink]=\"${1:path}\" routerLinkActive=\"active\">${2:name}</a>$0"
     ]
   },
   "Angular Dart Router Outlet": {
     "prefix": "ad-router-outlet",
     "description": "Router outlet element",
     "body": [
-      "<router-outlet [routes]=\"${routes}\"></router-outlet>",
+      "<router-outlet [routes]=\"${1:routes}\"></router-outlet>",
       "$0"
     ]
   },
@@ -32,35 +32,35 @@
     "prefix": "ad-if",
     "description": "If directive: *ngIf=\"expression\"",
     "body": [
-      "*ngIf=\"${expression}\"$0"
+      "*ngIf=\"${1:expression}\"$0"
     ]
   },
   "Angular Dart For-loop Directive": {
     "prefix": "ad-for",
     "description": "For-loop directive",
     "body": [
-      "*ngFor=\"let ${item} of ${items}\"$0"
+      "*ngFor=\"let ${1:item} of ${2:items}\"$0"
     ]
   },
   "Angular Dart For-loop Directive with li element": {
     "prefix": "ad-for-li",
     "description": "For-loop directive with li element",
     "body": [
-      "<li *ngFor=\"let ${item} of ${items}\">$0</li>"
+      "<li *ngFor=\"let ${1:item} of ${2:items}\">$0</li>"
     ]
   },
   "Angular Dart For-loop Directive with index": {
     "prefix": "ad-for-index",
     "description": "For-loop directive with index",
     "body": [
-      "*ngFor=\"let ${item} of ${items}; let i=index\"$0"
+      "*ngFor=\"let ${1:item} of ${2:items}; let i=index\"$0"
     ]
   },
   "Angular Dart Click Event": {
     "prefix": "ad-click",
     "description": "Click event",
     "body": [
-      "(click)=\"${expression}\"$0"
+      "(click)=\"${1:expression}\"$0"
     ]
   },
 }
