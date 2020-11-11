@@ -87,7 +87,7 @@ export class AngularSelectorDefinitionProvider
     const cachedResult = this.cache[clickedTag];
 
     if (cachedResult) {
-      const result = await this.searchTag(cachedResult, clickedTag);
+      const result = await this.searchTag(Uri.parse(cachedResult), clickedTag);
       if (result.match) {
         return this.buildLocation(result);
       }
@@ -99,7 +99,7 @@ export class AngularSelectorDefinitionProvider
         if (!res) {
           this.cache[clickedTag] = null;
         } else {
-          this.cache[clickedTag] = res.uri;
+          this.cache[clickedTag] = res.uri.path;
         }
 
         this.context.globalState.update(this.cacheName, this.cache);

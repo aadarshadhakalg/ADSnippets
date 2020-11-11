@@ -2,6 +2,11 @@
 
 All notable changes to the "adsnippets" extension will be documented in this file.
 
+## [0.0.7]
+
+- Follow component selector when click on it (component must be open in your current workspace)
+- Follow template and styles url when click on it
+
 ## [0.0.6]
 
 - rename `adcomp` to `ad-comp`
