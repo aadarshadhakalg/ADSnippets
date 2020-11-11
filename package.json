@@ -2,7 +2,7 @@
 	"name": "adsnippets",
 	"displayName": "Angular Dart Snippets",
 	"description": "A simple Angular Dart snippet extension. Generate boilerplate code for your next Angular Dart Project",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"publisher": "aadarshadhakalg",
 	"repository": {
 		"type": "git",
@@ -21,8 +21,7 @@
 		"Snippets"
 	],
 	"contributes": {
-		"snippets": [
-			{
+		"snippets": [{
 				"language": "dart",
 				"path": "./snippets/dart-snippets.code-snippets"
 			},

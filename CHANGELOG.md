@@ -2,6 +2,11 @@
 
 All notable changes to the "adsnippets" extension will be documented in this file.
 
+## [0.0.7]
+
+- Remove imports from dart snippets
+- Fix routes snippet
+
 ## [0.0.6]
 
 - rename `adcomp` to `ad-comp`
