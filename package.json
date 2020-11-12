@@ -1,8 +1,8 @@
 {
 	"name": "adsnippets",
-	"displayName": "Angular Dart Snippets",
-	"description": "A simple Angular Dart snippet extension. Generate boilerplate code for your next Angular Dart Project",
-	"version": "0.0.6",
+	"displayName": "Angular Dart",
+	"description": "A simple Angular Dart extension. Generate boilerplate code and more",
+	"version": "0.0.7",
 	"publisher": "aadarshadhakalg",
 	"repository": {
 		"type": "git",
@@ -18,11 +18,11 @@
 		"Dart"
 	],
 	"categories": [
+		"Programming Languages",
 		"Snippets"
 	],
 	"contributes": {
-		"snippets": [
-			{
+		"snippets": [{
 				"language": "dart",
 				"path": "./snippets/dart-snippets.code-snippets"
 			},
@@ -36,5 +36,22 @@
 		"id": "b6cbe7ae-b78b-4ade-b781-36af16bfa67b",
 		"publisherDisplayName": "Aadarsha Dhakal",
 		"publisherId": "f5ca5441-948a-4265-b24e-65e3543ab878"
+	},
+	"activationEvents": [
+		"onLanguage:html",
+		"onLanguage:dart"
+	],
+	"main": "./dist/src/extension",
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/node": "^14.14.6",
+		"typescript": "^4.0.5",
+		"vscode": "^1.1.37"
 	}
 }

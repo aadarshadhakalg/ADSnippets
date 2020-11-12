@@ -8,6 +8,9 @@ Angular Dart Snippets Generator.
 
 ## Features
 
+- Follow component selector when click on it (component must be open in your current workspace)
+- Follow template and styles url when click on it
+
 ### Generating Dart Codes
 
 | Shortcut      | Description                            |
